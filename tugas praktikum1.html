@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Praktikum1</title>
+
+<script>
+function konversi(){
+var nilai_a = Number(document.getElementById("a").value);
+var nilai_huruf;
+if((nilai_a>92)&&(nilai_a<=100))
+nilai_huruf = 'A';
+else if((nilai_a>82)&&(nilai_a<=92))
+nilai_huruf = 'B';
+else if((nilai_a>74)&&(nilai_a<=82))
+nilai_huruf = 'C';
+else if((nilai_a>49)&&(nilai_a<=74))
+nilai_huruf = 'D';
+else
+nilai_huruf = 'E';
+document.getElementById("c").value = nilai_huruf;
+}
+</script>
+</head>
+<body>
+<h1>Javascript</h1>
+<hr>
+<div id="judul">Konversi Nilai</div>
+
+<input type="text" name="a" id="a" size="2">
+=
+<input type="text" name="c" id="c" size="2">
+<br>
+<input type="button" name="tombol" id="tombol" value="konversi" onClick="konversi()"/>
+</body>
+</html>
